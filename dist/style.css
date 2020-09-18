@@ -22,14 +22,38 @@ section, aside {
 }
 
 .main-content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   background: #833ab4;
   background: -webkit-gradient(linear, left top, right top, color-stop(72%, #833ab4), color-stop(97%, #fd1d1d), to(#fcb045));
   background: linear-gradient(90deg, #833ab4 72%, #fd1d1d 97%, #fcb045 100%);
 }
 
 .sidebar {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 300px;
+          flex: 0 0 300px;
   background: #3ab442;
   background: -webkit-gradient(linear, left top, right top, color-stop(67%, #3ab442), color-stop(97%, #fd1d1d), to(#fcb045));
   background: linear-gradient(90deg, #3ab442 67%, #fd1d1d 97%, #fcb045 100%);
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h1, h2 {
+  margin-top: 0px;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */
