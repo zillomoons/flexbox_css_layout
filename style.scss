@@ -44,6 +44,9 @@ h1, h2 {
 }
 
 .flex-container {
-    display: flex;
+    
+    @media (min-width: 56.25em){
+        display: flex;
+    }
 }
 
